@@ -19,7 +19,7 @@ var rename = require('gulp-rename');
 
   function buildBundler(watch) {
     var customOpts = {
-      entries: ['./src/penny.jsx'],
+      entries: ['./src/toolbus.jsx'],
       debug: true,
       delay: 50
     };
@@ -40,7 +40,7 @@ var rename = require('gulp-rename');
   function bundleJS(b, shouldUglify) {
     return b.bundle()
       .on('error', gutil.log.bind(gutil, 'Browserify Error'))
-      .pipe(source('penny.min.js'))
+      .pipe(source('toolbus.min.js'))
       .pipe(buffer())
       .pipe(sourcemaps.init({ loadMaps: true }))
       .pipe(gulpif(shouldUglify, uglify()))
@@ -61,13 +61,13 @@ var rename = require('gulp-rename');
   gulp.task('jscs', function() {
     var jscs = require('gulp-jscs');
     return gulp.src('src/**/*.{js,jsx}')
-      .pipe(jscs('../.jscsrc'))
+      .pipe(jscs('.jscsrc'))
       .on('error', function() {});
   });
 
   gulp.task('jshint', function() {
     return gulp.src('./src/**/*.js')
-      .pipe(jshint('../.jshintrc'))
+      .pipe(jshint('.jshintrc'))
       .pipe(jshint.reporter('default'))
       .on('error', function() {});
   });
@@ -82,7 +82,7 @@ var rename = require('gulp-rename');
 
   function templateEnv(env, dest) {
     return function() {
-      return gulp.src(['src/index.html.erb', 'env.js.erb'])
+      return gulp.src(['src/index.html.erb'])
         .pipe(template({ env: env }))
         .pipe(rename({ extname: '' }))
         .pipe(gulp.dest(dest))
@@ -120,7 +120,7 @@ var rename = require('gulp-rename');
 
 gulp.task('watch', ['watch-js'], function() {
   gulp.watch('src/css/*.*', ['less']);
-  gulp.watch(['src/index.html.erb', 'env.js.erb'], ['development:template']);
+  gulp.watch(['src/index.html.erb'], ['development:template']);
   gulp.watch('src/**/*.{js,jsx}', ['jshint', 'jscs']);
   livereload.listen(35729);
 });
