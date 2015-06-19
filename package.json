@@ -1,0 +1,37 @@
+{
+  "name": "toolbus-web",
+  "description": "Toolbus website",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/JasonBenn/toolbus-web",
+  "devDependencies": {
+    "autoprefixer-core": "^5.1.11",
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "esprima-fb": "^15001.1.0-dev-harmony-fb",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-csscomb": "^3.0.3",
+    "gulp-if": "^1.2.5",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-less": "^3.0.3",
+    "gulp-livereload": "^3.8.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-template": "^3.0.0",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.2"
+  },
+  "dependencies": {
+    "babel": "^5.4.7",
+    "lodash": "^3.7.0",
+    "react": "^0.13.2",
+    "react-mistyped-props": "git+https://github.com/aquach/react-mistyped-props.git",
+    "underscore.string": "^3.0.3",
+    "velocity-animate": "^1.2.2"
+  }
+}
