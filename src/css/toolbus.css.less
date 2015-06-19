@@ -1,0 +1,127 @@
+/*TODO: clean up*/
+
+/* Installed Fonts */
+
+@font-face {
+  font-family: 'Conv_OCRAStd';
+  src: url('fonts/OCRAStd.eot');
+  src: local('☺'), url('fonts/OCRAStd.woff') format('woff'), url('fonts/OCRAStd.ttf') format('truetype'), url('fonts/OCRAStd.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.inline {
+  display: inline;
+}
+
+/*Global Styles */
+
+body {
+  background-color: #65bace;
+  margin: 0;
+  width: 100%; 
+  text-align: center;
+}
+
+h1{  
+  font-family: 'Conv_OCRAStd';
+  font-size: 1.5em;
+}
+
+p {
+ font-family: 'Conv_OCRAStd';
+ font-size: .9em;
+ line-height: 1.5em;
+ color:#1a1a1a;
+}
+
+/* Slide1 */
+.slide1 {
+  width: 100%;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo img {
+  width: 19%;
+  position: relative;
+  z-index: 1;
+  min-width: 220px;
+}
+
+.shape {
+  background: #35626c;
+  height:65px;
+  z-index: -1;
+  margin-top: 80px;
+}
+
+#content1{
+  margin-top:30px;
+}
+
+#content1 img {
+  width:75px;
+  height: auto;
+  margin: 15px 15px 15px 15px;
+}
+
+#content1 img:hover {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+#content1 h1{
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+
+/* Slide 2 */
+
+.slide2 {
+  background: #fedf73;
+  width: 100%;
+  height:auto;
+}
+
+#content2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+
+
+/*Footer*/
+.footer{
+  margin: 30px auto;
+}
+
+.footer a {
+    font-family: 'Conv_OCRAStd';
+    letter-spacing: 0px;
+    font-size: .5em;
+}
+
+.footer p{
+  font-size: .4em;
+  line-height: 1em; 
+}
+
+
+
+
+
+
+@media only screen and (max-device-width: 480px) {
+
+}

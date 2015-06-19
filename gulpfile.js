@@ -106,7 +106,7 @@ var rename = require('gulp-rename');
   });
 
   gulp.task('less', function() {
-    return gulp.src('src/css/penny.css.less')
+    return gulp.src('src/css/toolbus.css.less')
       .pipe(less())
       .on('error', gutil.log.bind(gutil, 'LESS Error'))
       .pipe(autoprefixer(['last 2 versions', 'iOS > 5%', 'Android > 5%']))
