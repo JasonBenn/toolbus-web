@@ -2,6 +2,6 @@ import React from 'react';
 import Landing from './components/landing.jsx'
 
 React.render(
-  <Landing/>,
+  <Landing />,
   document.getElementById('container')
 );

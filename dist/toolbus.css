@@ -2,8 +2,8 @@
 /* Installed Fonts */
 @font-face {
   font-family: 'Conv_OCRAStd';
-  src: url('fonts/OCRAStd.eot');
-  src: local('☺'), url('fonts/OCRAStd.woff') format('woff'), url('fonts/OCRAStd.ttf') format('truetype'), url('fonts/OCRAStd.svg') format('svg');
+  src: url("https://s3-us-west-2.amazonaws.com/toolbus/fonts/OCRAStd.eot");
+  src: local('☺'), url("https://s3-us-west-2.amazonaws.com/toolbus/fonts/OCRAStd.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/toolbus/fonts/OCRAStd.ttf") format("truetype"), url("https://s3-us-west-2.amazonaws.com/toolbus/fonts/OCRAStd.svg") format('svg');
   font-weight: normal;
   font-style: normal;
 }

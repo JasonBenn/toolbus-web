@@ -1,5 +1,7 @@
 import React from 'react';
 
+var s3Root = 'https://s3-us-west-2.amazonaws.com/toolbus/images/'
+
 var Landing = React.createClass({
   render() {
     return (
@@ -7,19 +9,19 @@ var Landing = React.createClass({
         <div className="slide1">
 
           <div id="logo" className="shape">
-            <img src="assets/images/toolbus.png"/>
+            <img src={s3Root + "toolbus.png" }/>
           </div>
 
           <div id="content1">
             <p>Go from a junior developer to a senior developer</p>
             <p>Measure what you do know and master what you dont</p>
             <p>Toolbus scans your projects for code achievements</p>
-            <a href="2"><img src="assets/images/embernerd.png" /></a>
-            <a href="1"><img src="assets/images/railsnerd.png" /></a>
-            <a href="7"><img src="assets/images/rubynerd.png" /></a>
-            <a href="4"><img src="assets/images/pythonnerd.png" /></a>
-            <a href="3"><img src="assets/images/cssnerd.png" /></a>
-            <a href="6"><img src="assets/images/jsnerd.png" /></a>
+            <a href="2"><img src={s3Root + "embernerd.png" } /></a>
+            <a href="1"><img src={s3Root + "railsnerd.png" } /></a>
+            <a href="7"><img src={s3Root + "rubynerd.png" } /></a>
+            <a href="4"><img src={s3Root + "pythonnerd.png" } /></a>
+            <a href="3"><img src={s3Root + "cssnerd.png" }/></a>
+            <a href="6"><img src={s3Root + "jsnerd.png" } /></a>
             <h1>CHOOSE AN OPTION TO BUILD YOUR MASTERY</h1>
           </div>
         </div>
